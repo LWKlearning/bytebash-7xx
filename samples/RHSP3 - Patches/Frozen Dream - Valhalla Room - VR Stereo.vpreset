@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValhallaRoom pluginVersion="1.5.1" presetName="VR Stereo" mix="0.56699997186660767"
+              predelay="0" decay="0.019019018858671188" HighCut="0.53020131587982178"
+              earlyLateMix="0" lateSize="0.5" lateCross="1" lateModRate="0.090909093618392944"
+              lateModDepth="0.5" RTBassMultiply="0.3333333432674408" RTXover="0.090909093618392944"
+              RTHighMultiply="0.44444447755813599" RTHighXover="0.53020131587982178"
+              earlySize="0.0088088084012269974" earlyCross="0.69999998807907104"
+              earlyModRate="0.19191919267177582" earlyModDepth="0.5" earlySend="0"
+              diffusion="1" type="0.083333335816860199"/>

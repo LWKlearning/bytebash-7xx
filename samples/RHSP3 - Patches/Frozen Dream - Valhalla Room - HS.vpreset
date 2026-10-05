@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValhallaRoom pluginVersion="1.5.1" presetName="HS" mix="1" predelay="0.40119999647140503"
+              decay="0.031631629914045334" HighCut="0.65436244010925293" earlyLateMix="0.43799999356269836"
+              lateSize="0.9100000262260437" lateCross="1" lateModRate="0.090909093618392944"
+              lateModDepth="0.12999999523162842" RTBassMultiply="0.58666664361953735"
+              RTXover="0.090909093618392944" RTHighMultiply="0" RTHighXover="0.56241613626480103"
+              earlySize="0.23293294012546539" earlyCross="0.10000000149011612"
+              earlyModRate="0.090909093618392944" earlyModDepth="0" earlySend="1"
+              diffusion="1" type="0.4166666567325592"/>

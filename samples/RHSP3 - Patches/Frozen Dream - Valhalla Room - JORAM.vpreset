@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValhallaRoom pluginVersion="1.5.1" presetName="JORAM" mix="1" predelay="0.00019999999494757503"
+              decay="0.065965965390205383" HighCut="0.35033556818962097" earlyLateMix="0.69099998474121094"
+              lateSize="0.059999998658895493" lateCross="0.12999999523162842"
+              lateModRate="0.17575757205486298" lateModDepth="0.070000000298023224"
+              RTBassMultiply="0.73333334922790527" RTXover="0.027272727340459824"
+              RTHighMultiply="0.3333333432674408" RTHighXover="0.59798657894134521"
+              earlySize="0.029029028490185738" earlyCross="0.10000000149011612"
+              earlyModRate="0.090909093618392944" earlyModDepth="0" earlySend="0"
+              diffusion="1" type="0.3333333432674408"/>

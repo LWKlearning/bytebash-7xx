@@ -1,0 +1,7 @@
+import {readFileSync,readdirSync,existsSync} from 'node:fs';import {execFileSync} from 'node:child_process';import path from 'node:path';
+const root=path.resolve('.'),files=readdirSync(root).filter(f=>f.endsWith('.js'));
+for(const f of files){const file=path.join(root,f);execFileSync(process.execPath,['--check',file]);const text=readFileSync(file,'utf8');for(const m of text.matchAll(/(?:from\s*|import\s*\()\s*['"](\.\/[^'"]+)['"]/g))if(!existsSync(path.resolve(root,m[1])))throw Error('Missing module '+m[1]);}
+const html=readFileSync(path.join(root,'index.html'),'utf8'),ids=[...html.matchAll(/\bid="([^"]+)"/g)].map(m=>m[1]);if(new Set(ids).size!==ids.length)throw Error('Duplicate HTML IDs');for(const m of html.matchAll(/(?:src|href)="((?:\.\/|\/)[^"#?]+)"/g))if(!existsSync(path.join(root,decodeURIComponent(m[1]))))throw Error('Missing HTML asset '+m[1]);
+const index=JSON.parse(readFileSync(path.join(root,'assets/sample-index.json')));if(index.length!==360)throw Error('Unexpected verified sample count');for(const s of index)if(!existsSync(path.join(root,decodeURIComponent(s.url))))throw Error('Missing sample '+s.name);
+const actions=new Set([...readFileSync(path.join(root,'app.js'),'utf8').matchAll(/case\s*'([^']+)'/g)].map(m=>m[1]));for(const m of html.matchAll(/data-action="([^"]+)"/g))if(!actions.has(m[1]))throw Error('Unimplemented action '+m[1]);
+console.log(`${files.length} modules parsed; assets, ${ids.length} unique IDs, actions and ${index.length} sample paths verified.`);

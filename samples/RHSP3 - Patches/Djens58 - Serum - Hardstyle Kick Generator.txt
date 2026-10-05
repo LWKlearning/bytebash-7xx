@@ -1,0 +1,55 @@
+Hello there!
+
+In this readme I will explain some stuff about the kick generator.
+I use the kick generator mainly for creating a punch and character layer for my kicks.
+I do not recommend using an export of this directly in your mixes, it will most likely just not sound very good.
+Use this generator as a starting point for your kicks.
+
+Place a 1/4 note at around F4 on the keyboard, in my opinion this works best for this patch.
+EQ and layer it with other sounds to make it more full and balanced.
+I suggest at least adding a nice low-end in the tail and punch, to balance out the mid- and high-end frequencies.
+But you may want to EQ more and add additional layers to make it more full.
+Also play around with other FX like reverb, delay and more distortion in your FX chain!
+
+Use every macro to tweak it to your liking:
+
+Macro 1: TONE
+This knob will change the tonality of your kick.
+It will bottom out at 350 Hz and goes up to ~1100 Hz, if you want to go lower or higher, change the filter settings.
+
+Marco 2: INTENSITY
+With this knob you can change the intensity of the tone.
+You can also completely cancel out the tone to make interesting non-tonal tails.
+50% means that there is very little resonance.
+With 0% you will sort of cancel out the resonance.
+100% for your daily dose of resonant ear-rape.
+I usually go for 50-70% here.
+
+Macro 3: POGO
+The POGO knob controls the pitch envelope in LFO2, which controls the envelope of the kick.
+Set it to 0% to make nice gliding kicks, or higher for more constant kicks with shorter attacks.
+LFO2 is currently set to Beat Sync for ease of use, if you want more control, switch that off.
+
+Marco 4: DURATION
+Turn this one to 0% if you only want to create punches. It cuts (most of the) the tail off.
+
+Filter:
+Play around with different filter shapes for different results.
+Simply click through them with the arrow keys (<>) until you hear something you like.
+
+FX:
+Highly recommend switching some of these on and off and changing up distortion types for different results.
+
+OSC A / OSC B:
+Use different wavetables for other sounds! Make your kick wider by increasing the stereo or more detuning, go HAM here.
+
+SUB:
+Change the sub shape for more interesting shapes. It will drastically alter your tail.
+
+I made it with an older version of Serum (v1.113), hopefully everyone can use it that way.
+If you make anything (complete tracks, pieces of tracks, kicks, whatever!) with this thing, I am always interested to hear what others are making.
+Feel free to message me on Reddit! Also if you have any questions. Happy to answer (if I can, I am nowhere nere an expert!).
+
+Regards,
+
+u/Djens58

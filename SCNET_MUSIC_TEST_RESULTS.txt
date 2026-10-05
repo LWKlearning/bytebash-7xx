@@ -1,0 +1,45 @@
+{ fraction: 0.12, stage: 'SCNet · separating section 1 / 1' }
+{ fraction: 0.83, stage: 'Detecting editable notes / samples · drums' }
+{
+  fraction: 0.8674999999999999,
+  stage: 'Detecting editable notes / samples · bass'
+}
+{
+  fraction: 0.9049999999999999,
+  stage: 'Detecting editable notes / samples · other'
+}
+{
+  fraction: 0.9424999999999999,
+  stage: 'Detecting editable notes / samples · vocals'
+}
+{
+  "input": "11-second excerpt of upstream SCNet browser demo music (test input only, not bundled)",
+  "sampleRate": 44100,
+  "stems": [
+    {
+      "name": "drums",
+      "rms": 0.12621123446983248
+    },
+    {
+      "name": "bass",
+      "rms": 0.13533842586414502
+    },
+    {
+      "name": "other",
+      "rms": 0.12705060964499054
+    },
+    {
+      "name": "vocals",
+      "rms": 0.049775749256228574
+    }
+  ],
+  "mixtureReconstructionSNR": 31.16436036941745,
+  "notes": 177,
+  "samples": 5,
+  "roles": [
+    "Bass",
+    "Pitched",
+    "Vocals"
+  ],
+  "quality": "No isolated ground-truth stems; metrics verify executable workflow, not SDR separation quality."
+}

@@ -1,0 +1,117 @@
+
+----------------------------------------------------------------------------------------------------
+                        == The /r/Hardstyle Producer Sample Pack #3 2023 ==
+----------------------------------------------------------------------------------------------------
+
+ https://www.reddit.com/r/hardstyle
+ https://discord.gg/hardstyle
+
+----------------------------------------------------------------------------------------------------
+
+Thanks for downloading this year's sample pack! All samples in this pack are free to use. You may
+use these samples and patches in your productions, and you can release tracks made with them.
+
+Samples are sorted by its type per folder.
+
+----------------------------------------------------------------------------------------------------
+
+Sample authors: (in alphabetical order)
+- Cheesy Cheese:   https://soundcloud.com/itscheesycheese
+- D-Charged:       https://www.instagram.com/dcharged/
+- Darklight:       https://www.instagram.com/darklightspa
+- Djens58:         https://www.reddit.com/user/Djens58
+- EDPH:            https://www.instagram.com/enderpeach
+- fdigl
+- Hardshifterz:    https://www.instagram.com/hardshifterz3110
+- Jacknife:        https://soundcloud.com/jacknife-dj
+- KickFlip:        https://linktr.ee/kickflip_
+- MADD:            https://www.instagram.com/hard_madd
+- Missterious:     https://www.instagram.com/missteriousdj
+- mmxii:           https://soundcloud.com/luckyboiiii
+- Nammy:           https://www.youtube.com/channel/UCq1P6OTrA3SyDJ3H7AkvBAA
+- Neolux:          https://www.instagram.com/neoluxmusic
+- NIXIDE:          https://soundcloud.com/nixide
+- Phantem
+- RVRITY:          https://soundcloud.com/rvrity
+- S-TRIX:          https://www.instagram.com/strix_music
+- Tachyon Flare:   https://open.spotify.com/artist/7tUlgzOYpZMjeBGIWv5TOQ
+- Tapete
+- ThatOneExplorer: https://www.youtube.com/channel/UCAjbCmTOmTsNkPMfxaPtULQ
+- two-toner:       https://www.instagram.com/mike_twotoner
+- Wiqtory:         https://www.instagram.com/wiqtory
+- YGREK
+
+----------------------------------------------------------------------------------------------------
+
+The following non-destructive optimizations were (automatically) applied to all samples:
+  - Trimmed all silence at the end (this saved ~35 MB of space)
+  - Normalized kick samples to 0 dB that were quieter than 0 dB
+  - Stereo samples that had identical left/right channels were downsampled to 1 channel
+
+Some destructive optimizations were also applied to some samples:
+  - Clipped some samples to 0 dB. This decision was made because we can reasonably assume the author
+    would be listening to the sample through a clipped audio output, so (hopefully) the samples are
+    not any different than what the authors intended. The list of samples that were clipped:
+      RHSP3 - FX\Frozen Dream - Growl.wav
+      RHSP3 - FX\Tapete - Screech 1.wav
+      RHSP3 - FX\Tapete - Screech 2.wav
+      RHSP3 - FX\Tapete - Screech 4.wav
+      RHSP3 - FX\Tapete - Screech 6.wav
+      RHSP3 - FX\Wiqtory - Dune3Sequence2.wav
+      RHSP3 - FX\Wiqtory - SerumSequence1 150BPM dry.wav
+      RHSP3 - Hardstyle Kick Partials\Hardshifterz - Punch - F.wav
+      RHSP3 - Hardstyle Kicks\Hardshifterz - Kick Frenchcore - A.wav
+      RHSP3 - Hardstyle Kicks\mmxii - Like Vertile Triplet - G.wav
+      RHSP3 - Hardstyle Kicks\Nammy - Boomy kick 1.wav
+      RHSP3 - Hardstyle Kicks\Nammy - gated kick 7.wav
+      RHSP3 - Hardstyle Kicks\Nammy - Klaplong kick 1.wav
+      RHSP3 - Hardstyle Kicks\Nammy - nuker kick 1.wav
+      RHSP3 - Hardstyle Kicks\Nammy - nuker kick 2 pogopunch.wav
+      RHSP3 - Hardstyle Kicks\Nammy - nuker kick 2.wav
+      RHSP3 - Hardstyle Kicks\Tachyon Flare - Cup Flick Kick - G#.wav
+      RHSP3 - Hardstyle Kicks\Tachyon Flare - FOS kick - A.wav
+      RHSP3 - Hardstyle Kicks\Tachyon Flare - Kick - C.wav
+      RHSP3 - Hardstyle Kicks\Tachyon Flare - Reverse Groove Kick 1 - G.wav
+      RHSP3 - Hardstyle Kicks\Tapete - Kick 10 - IntroKick - F#.wav
+      RHSP3 - Hardstyle Kicks\Tapete - Kick 3 - IntroKick5 - F#.wav
+      RHSP3 - Hardstyle Kicks\Tapete - Kick 5 - IntroKick7 - F#.wav
+      RHSP3 - Hardstyle Kicks\Tapete - Kick 6 - IntroKick6 - F#.wav
+      RHSP3 - Hardstyle Kicks\Tapete - Kick 8 - MainKick3.2 - F#.wav
+      RHSP3 - Hardstyle Kicks\two-toner - bonk 1.1 - E.wav
+      RHSP3 - Hardstyle Kicks\two-toner - kick 12 - A.wav
+      RHSP3 - Hardstyle Kicks\two-toner - kick 14.1 - G#.wav
+      RHSP3 - Hardstyle Kicks\two-toner - kick 7.10 - A.wav
+      RHSP3 - Hardstyle Kicks\two-toner - piep but 150 for reasons - G.wav
+      RHSP3 - Hardstyle Kicks\Wiqtory - DistortedTech.wav
+      RHSP3 - Percussion\D-Charged - Clap 2.wav
+      RHSP3 - Percussion\D-Charged - Delayed Clap 1.wav
+      RHSP3 - Percussion\Frozen Dream - Crash 3.wav
+      RHSP3 - Percussion\Wiqtory - ClubKick6.wav
+      RHSP3 - Uptempo Kicks\two-toner - help - A.wav
+      RHSP3 - Uptempo Kicks\two-toner - hors - E.wav
+      RHSP3 - Uptempo Kicks\two-toner - piep 1.2 + reverb.wav
+      RHSP3 - Uptempo Kicks\two-toner - piep 6 - G.wav
+      RHSP3 - Uptempo Kicks\two-toner - piep 8 - G.wav
+      RHSP3 - Uptempo Kicks\two-toner - piep 9.wav
+      RHSP3 - Uptempo Kicks\two-toner - piep xs - C.wav
+      RHSP3 - Uptempo Kicks\two-toner - sefakick.wav - A.wav
+
+----------------------------------------------------------------------------------------------------
+
+Disclaimer:
+
+You are allowed to use these samples free of charge! All the sample authors have given their
+permission for these samples to be used. Enjoy!
+
+The sample authors above have claimed to have made all of their respective samples. If this is not
+the case (eg. your sample has been included by mistake), please contact @Miss on the /r/Hardstyle
+Discord or /u/Ansjh on Reddit.
+
+Not all samples that have been submitted are included in the pack. This is due to a slight amount of
+quality control. (Examples are duplicates, multiple pitched samples, ripped samples, low quality
+samples, and other unfixable issues.)
+
+SCNet / trained MUSDB18 source-separation weights:
+Architecture copyright (c) 2024 starrytong; training framework copyright (c) 2024 Roman Solovyev (ZFTurbo), MIT. Full notices: /models/SCNET-LICENSE and /models/MSST-LICENSE.
+Browser export by elicwhite: https://github.com/elicwhite/scnet-web-wasm and https://huggingface.co/elicwhite/scnet-browser-onnx . BYTEBASH's DSP integration is independently implemented.
+ONNX Runtime Web 1.21.0 copyright Microsoft Corporation, MIT. Full notice: /vendor/ort/LICENSE.

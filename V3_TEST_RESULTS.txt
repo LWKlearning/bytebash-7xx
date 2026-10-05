@@ -1,0 +1,33 @@
+BYTEBASH v3 — 2026-10-03
+
+AUTOMATED
+✔ Parameter gestures preserve the audio graph; note, source and routing edits require reconstruction (0.391987ms)
+✔ Every-N repeat events remain deterministic across live loops and duplicated pattern renders (0.951741ms)
+ℹ tests 228
+ℹ suites 0
+ℹ pass 228
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 9953.397707
+Static validation: 27 JS modules; 54 unique HTML IDs; 360 sample URLs; actions and assets resolved.
+Genre/length/meter stress: 220 maximum-chaos combinations bounded and grid-aligned.
+Seed diversity: 40 seeds in each of 11 styles (440 cases), with humanization and velocity variation disabled; at least 30 distinct rhythm/pitch signatures per style.
+
+HEADLESS CHROMIUM (real browser, AudioWorklet and web workers)
+All 11 styles: real worker/sample preview rendered finite audible PCM.
+Fake microphone → reusable sample → sampler/MIDI, save-to-IndexedDB, and capture-last-performance PASS.
+DESKTOP 1440×900 PASS: 8 distinct rhythm seeds, bulk note edit, duplicate/undo/redo, bulk tracks, editors, 6 live effect bypass/deletion edits, audible playback peak 0.1789, resample and sampler. No console/page errors.
+Touch Select tap draws no notes; metronome visible; compact BPM/transport PASS.
+PHONE 390×844 PASS: 8 distinct rhythm seeds, bulk note edit, duplicate/undo/redo, bulk tracks, editors, 6 live effect bypass/deletion edits, audible playback peak 0.1159, resample and sampler. No console/page errors.
+
+PATCH REGRESSIONS
+Selected-note operations, source-safe async processing/crop/resample/freeze, clipboard context, routing rollback, independent duplication IDs, preserved FX/macros/automation, frozen snapshots, multi-pattern identity, pitched kick mutation, shared pad filling, selection/no-selection boundaries and undo/redo.
+
+LIMITS
+Phone checks use an emulated 390x844 viewport and touch input in Chromium, not a physical phone or Safari. Microphone input was simulated. External MIDI hardware, subjective listening, long sessions, and every browser/device have not been tested. Separation inference was not repeated because the original model/runtime are unchanged; existing inference reports remain in this package.
+
+ASSET INTEGRITY
+425 original sample/model/runtime files match v2 byte-for-byte.
+FP32 SCNet combined SHA-256: 29137273515c3f10dc69e22a84a63bfc09b71abdf27cf801da463e0644870ade

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValhallaRoom pluginVersion="1.5.1" presetName="Wildstylez" mix="1" predelay="0.013799999840557575"
+              decay="0.049049049615859985" HighCut="0.66442954540252686" earlyLateMix="1"
+              lateSize="1" lateCross="1" lateModRate="0.16363635659217834"
+              lateModDepth="0.54000002145767212" RTBassMultiply="0.3333333432674408"
+              RTXover="0.090909093618392944" RTHighMultiply="0" RTHighXover="0.4100671112537384"
+              earlySize="0.22802802920341492" earlyCross="0.10000000149011612"
+              earlyModRate="0.090909093618392944" earlyModDepth="0" earlySend="1"
+              diffusion="1" type="0.83333331346511841"/>

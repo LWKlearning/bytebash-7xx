@@ -1,0 +1,24 @@
+BYTEBASH beat generator / menu revision — 2026-10-03
+
+Full automated suite: 205 passed, 0 failures.
+Final generator-only regression rerun: 18 passed.
+Static check: 26 modules parsed, 54 unique IDs, 360 sample paths verified.
+220 maximum-chaos style/length/meter combinations bounded and grid-aligned.
+Simulated DOM: menus, custom controls, generation, mutation with lane lock, exact previous draft restoration, insertion, undo/redo, reopening history and preview cancellation passed; no UI errors observed. DOM simulation uses jsdom; layout/device APIs are not validated.
+Actual pack sampler rendering PASS (11 styles, finite audible PCM).
+Hardstyle: peak 0.2536, RMS 0.0783, 70 editable hits
+Rawstyle: peak 0.2536, RMS 0.0783, 74 editable hits
+Hardcore: peak 0.2536, RMS 0.0783, 90 editable hits
+Gabber: peak 0.2497, RMS 0.0874, 102 editable hits
+Techno: peak 0.3033, RMS 0.1020, 86 editable hits
+House: peak 0.3033, RMS 0.1020, 81 editable hits
+DnB: peak 0.1951, RMS 0.0672, 63 editable hits
+Breakbeat: peak 0.1971, RMS 0.0693, 67 editable hits
+Trap: peak 0.3363, RMS 0.0894, 71 editable hits
+Hip-hop: peak 0.3075, RMS 0.0980, 83 editable hits
+Custom: peak 0.2536, RMS 0.0783, 70 editable hits
+
+Original sample/model/runtime entries checked byte-for-byte: 425.
+Full FP32 model SHA-256: 29137273515c3f10dc69e22a84a63bfc09b71abdf27cf801da463e0644870ade
+
+No subjective listening, actual-browser layout or physical phone/tablet testing was completed. Render checks establish finite nonzero PCM, not taste. No model inference rerun was needed for unchanged model/runtime; prior inference reports remain included.

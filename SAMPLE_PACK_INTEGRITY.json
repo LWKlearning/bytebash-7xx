@@ -1,0 +1,166 @@
+{
+  "sourceArchive": "RHSP3 - Reddit Hardstyle Sample Pack 2023(1).zip",
+  "unrecoverableEntries": [
+    {
+      "file": "RHSP3 - Percussion/D-Charged - Delayed Clap 1.wav",
+      "error": "Bad CRC-32 for file 'RHSP3 - Percussion/D-Charged - Delayed Clap 1.wav'"
+    },
+    {
+      "file": "RHSP3 - Percussion/D-Charged - Delayed Clap 2.wav",
+      "error": "Bad magic number for file header"
+    },
+    {
+      "file": "RHSP3 - Percussion/D-Charged - Fill 1.wav",
+      "error": "Bad magic number for file header"
+    },
+    {
+      "file": "RHSP3 - Percussion/D-Charged - Fill 2.wav",
+      "error": "Bad magic number for file header"
+    },
+    {
+      "file": "RHSP3 - Percussion/D-Charged - Fill 3.wav",
+      "error": "Bad magic number for file header"
+    },
+    {
+      "file": "RHSP3 - Percussion/D-Charged - Perc.wav",
+      "error": "Bad magic number for file header"
+    },
+    {
+      "file": "RHSP3 - Percussion/Frozen Dream - Club Kick.wav",
+      "error": "Bad magic number for file header"
+    },
+    {
+      "file": "RHSP3 - Percussion/Frozen Dream - Crash 2.wav",
+      "error": "Bad magic number for file header"
+    },
+    {
+      "file": "RHSP3 - Percussion/Frozen Dream - Crash 3.wav",
+      "error": "Bad magic number for file header"
+    },
+    {
+      "file": "RHSP3 - Percussion/Frozen Dream - Crash sd 2.wav",
+      "error": "Bad magic number for file header"
+    },
+    {
+      "file": "RHSP3 - Percussion/Frozen Dream - Crash sd 2b.wav",
+      "error": "Bad magic number for file header"
+    },
+    {
+      "file": "RHSP3 - Percussion/Frozen Dream - Crash sd vs.wav",
+      "error": "Bad magic number for file header"
+    },
+    {
+      "file": "RHSP3 - Percussion/Frozen Dream - Crash.wav",
+      "error": "Bad magic number for file header"
+    },
+    {
+      "file": "RHSP3 - Percussion/Frozen Dream - RVS BASS Club kick design.wav",
+      "error": "Bad magic number for file header"
+    },
+    {
+      "file": "RHSP3 - Percussion/Frozen Dream - Small Kick.wav",
+      "error": "Bad magic number for file header"
+    },
+    {
+      "file": "RHSP3 - Percussion/Hardshifterz - Impact - E.wav",
+      "error": "Bad magic number for file header"
+    },
+    {
+      "file": "RHSP3 - Percussion/Jacknife - RichardRoll.wav",
+      "error": "Bad magic number for file header"
+    },
+    {
+      "file": "RHSP3 - Percussion/Tapete - TechnoKick.wav",
+      "error": "Bad magic number for file header"
+    },
+    {
+      "file": "RHSP3 - Percussion/Wiqtory - ClubKick1.wav",
+      "error": "Bad magic number for file header"
+    },
+    {
+      "file": "RHSP3 - Percussion/Wiqtory - ClubKick2.wav",
+      "error": "Bad magic number for file header"
+    },
+    {
+      "file": "RHSP3 - Percussion/Wiqtory - ClubKick3.wav",
+      "error": "Bad magic number for file header"
+    },
+    {
+      "file": "RHSP3 - Percussion/Wiqtory - ClubKick4.wav",
+      "error": "Bad magic number for file header"
+    },
+    {
+      "file": "RHSP3 - Percussion/Wiqtory - ClubKick5.wav",
+      "error": "Bad magic number for file header"
+    },
+    {
+      "file": "RHSP3 - Percussion/Wiqtory - ClubKick6.wav",
+      "error": "Bad magic number for file header"
+    },
+    {
+      "file": "RHSP3 - Percussion/Wiqtory - DistortedSnare - A#.wav",
+      "error": "Bad magic number for file header"
+    },
+    {
+      "file": "RHSP3 - Percussion/Wiqtory - DistortedSnare2 - G.wav",
+      "error": "Bad magic number for file header"
+    },
+    {
+      "file": "RHSP3 - Percussion/Wiqtory - LowProfileSnare1.wav",
+      "error": "Bad magic number for file header"
+    },
+    {
+      "file": "RHSP3 - Percussion/Wiqtory - LowProfileSnare2.wav",
+      "error": "Bad magic number for file header"
+    },
+    {
+      "file": "RHSP3 - Percussion/Wiqtory - SerumCrash1.wav",
+      "error": "Bad magic number for file header"
+    },
+    {
+      "file": "RHSP3 - Percussion/Wiqtory - SerumCrash2.wav",
+      "error": "Bad magic number for file header"
+    },
+    {
+      "file": "RHSP3 - Percussion/Wiqtory - SerumCrash3.wav",
+      "error": "Bad magic number for file header"
+    },
+    {
+      "file": "RHSP3 - Percussion/Wiqtory - SerumCrash4.wav",
+      "error": "Bad magic number for file header"
+    },
+    {
+      "file": "RHSP3 - Percussion/Wiqtory - SerumCrash5 150BPM.wav",
+      "error": "Bad magic number for file header"
+    },
+    {
+      "file": "RHSP3 - Percussion/Wiqtory - SerumCymbal1.wav",
+      "error": "Bad magic number for file header"
+    },
+    {
+      "file": "RHSP3 - Percussion/Wiqtory - SerumCymbal2.wav",
+      "error": "Bad magic number for file header"
+    },
+    {
+      "file": "RHSP3 - Percussion/Wiqtory - SerumCymbal3.wav",
+      "error": "Bad magic number for file header"
+    },
+    {
+      "file": "RHSP3 - Percussion/Wiqtory - SerumCymbal4.wav",
+      "error": "Bad magic number for file header"
+    },
+    {
+      "file": "RHSP3 - Percussion/Wiqtory - SerumHat1.wav",
+      "error": "Bad magic number for file header"
+    },
+    {
+      "file": "RHSP3 - Percussion/Wiqtory - SerumHat2.wav",
+      "error": "Bad magic number for file header"
+    },
+    {
+      "file": "RHSP3 - Percussion/Wiqtory - Snareable1 150BPM.wav",
+      "error": "Bad magic number for file header"
+    }
+  ],
+  "note": "A zero-filled source region prevents complete recovery. Damaged entries are excluded; no synthesized replacements."
+}

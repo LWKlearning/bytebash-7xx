@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValhallaRoom pluginVersion="1.5.1" presetName="Ad Lead Verb" mix="0.1379999965429306"
+              predelay="0.019999999552965164" decay="0.11701701581478119" HighCut="0.88926172256469727"
+              earlyLateMix="0.72399997711181641" lateSize="0.5" lateCross="1"
+              lateModRate="0.090909093618392944" lateModDepth="0.5" RTBassMultiply="0.3333333432674408"
+              RTXover="0.090909093618392944" RTHighMultiply="0.44444447755813599"
+              RTHighXover="0.53020131587982178" earlySize="0.029029028490185738"
+              earlyCross="0.10000000149011612" earlyModRate="0.090909093618392944"
+              earlyModDepth="0" earlySend="0" diffusion="1" type="0.083333335816860199"/>

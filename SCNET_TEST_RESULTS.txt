@@ -1,0 +1,28 @@
+SCNet · separating section 1 / 1
+{
+  "runtime": "shipped ONNX Runtime Web 1.21.0 / single-thread WASM",
+  "checksum": "29137273515c3f10dc69e22a84a63bfc09b71abdf27cf801da463e0644870ade",
+  "roundtripMaxError": 7.450580596923828e-9,
+  "stats": [
+    {
+      "stem": "drums",
+      "samples": 44100,
+      "rms": 0.00011343552739855239
+    },
+    {
+      "stem": "bass",
+      "samples": 44100,
+      "rms": 0.07085621851952242
+    },
+    {
+      "stem": "other",
+      "samples": 44100,
+      "rms": 0.00018549017396283203
+    },
+    {
+      "stem": "vocals",
+      "samples": 44100,
+      "rms": 0.00008004628214362195
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValhallaRoom pluginVersion="1.5.1" presetName="CTP dist vocal" mix="0.082191780209541321"
+              predelay="0.027397260069847107" decay="0.060960959643125534"
+              HighCut="0.38255032896995544" earlyLateMix="1" lateSize="0.90410959720611572"
+              lateCross="0.4109589159488678" lateModRate="0.12328767031431198"
+              lateModDepth="0.21917808055877686" RTBassMultiply="0.45205479860305786"
+              RTXover="0.054794520139694214" RTHighMultiply="0.50684928894042969"
+              RTHighXover="0.20410959422588348" earlySize="0.12328767031431198"
+              earlyCross="0.28767123818397522" earlyModRate="0.090909093618392944"
+              earlyModDepth="0.2054794579744339" earlySend="0.55753421783447266"
+              diffusion="1" type="0.31506848335266113"/>

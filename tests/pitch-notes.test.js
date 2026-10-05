@@ -1,0 +1,5 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {pitchToNotes} from '../dsp.js';
+const sr=12000;
+function phrase(){const x=new Float32Array(sr*2);for(let i=0;i<x.length;i++){const t=i/sr;if(t<.7)x[i]=.2*Math.sin(2*Math.PI*220*t);else if(t>=1&&t<1.8)x[i]=.2*Math.sin(2*Math.PI*440*(t-1));}return x;}
+test('Pitch detection separates stable monophonic notes and silence with useful timing',()=>{const notes=pitchToNotes([phrase()],sr);assert.equal(notes.length,2);assert.deepEqual(notes.map(n=>n.pitch),[57,69]);assert.ok(Math.abs(notes[0].start)<.04);assert.ok(Math.abs(notes[0].length-.7)<.08);assert.ok(Math.abs(notes[1].start-1)<.05);assert.ok(notes.every(n=>n.confidence>.9&&Math.abs(n.cents)<10));});
+test('Anti-phase stereo and harmonic-rich notes retain the fundamental; silence yields none',()=>{const x=Float32Array.from({length:sr},(_,i)=>.2*Math.sin(2*Math.PI*130.8128*i/sr)+.1*Math.sin(2*Math.PI*261.6256*i/sr)),notes=pitchToNotes([x,Float32Array.from(x,v=>-v)],sr);assert.equal(notes.length,1);assert.equal(notes[0].pitch,48);assert.ok(Math.abs(notes[0].cents)<10);assert.deepEqual(pitchToNotes([new Float32Array(sr)],sr),[]);});

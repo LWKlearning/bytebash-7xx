@@ -1,0 +1,22 @@
+import {uid,midiClip} from './core.js';
+// Events remain in musical time. Each loop pass is a separate reversible take.
+export class MidiRecording{
+ constructor(trackId,start,loop={enabled:false}){this.trackId=trackId;this.loop=loop;this.active=new Map();this.held=new Map();this.sustain=new Set();this.takes=[];this.last=start;this.groupId=uid();this.newTake(start);}
+ newTake(start){this.take=midiClip(start,.25);this.take.name='MIDI recording · take '+(this.takes.length+1);this.take.takeGroup=this.groupId;this.take.takeIndex=this.takes.length+1;this.take.cc=[];this.take.expression=[];this.takes.push(this.take);}
+ position(beat){if(this.loop.enabled&&beat<this.last-.25){const notes=[...this.active.entries()];for(const [key,n]of notes)this.end(key,this.loop.end);this.newTake(this.loop.start);for(const [key,n]of notes)this.begin(key,n.pitch,n.velocity,this.loop.start);}this.last=beat;this.take.length=Math.max(.25,beat-this.take.start);}
+ begin(key,pitch,velocity,beat){if(this.active.has(key))this.end(key,beat);this.active.set(key,{id:uid(),pitch,velocity,start:beat,channel:Number(key.split(':')[0])||0});}
+ end(key,beat){const n=this.active.get(key);if(!n)return;this.take.notes.push({...n,start:Math.max(0,n.start-this.take.start),length:Math.max(1/64,beat-n.start)});this.take.length=Math.max(this.take.length,beat-this.take.start);this.active.delete(key);this.held.delete(key);}
+ feed(status,key,value,beat,channel=status&15){this.position(beat);const type=status&240,id=channel+':'+key;if(type===144&&value>0)this.begin(id,key,value/127,beat);else if(type===128||type===144){if(this.sustain.has(channel))this.held.set(id,true);else this.end(id,beat);}else if(type===224||type===208||type===160){const normalized=type===224?((value<<7|key)-8192)/8192:(type===208?key:value)/127;this.take.expression.push({beat:Math.max(0,beat-this.take.start),type:type===224?'pitchBend':'aftertouch',value:normalized,channel,curve:'step',...(type===160?{pitch:key}:{})});}else if(type===176){this.take.cc.push({beat:Math.max(0,beat-this.take.start),controller:key,value,channel});if(key===64){if(value>=64)this.sustain.add(channel);else{this.sustain.delete(channel);for(const id of [...this.held.keys()])if(id.startsWith(channel+':'))this.end(id,beat);}}if(key===123||key===120)for(const id of [...this.active.keys()])if(id.startsWith(channel+':'))this.end(id,beat);}}
+ finish(beat){this.position(beat);for(const key of [...this.active.keys()])this.end(key,beat);const takes=this.takes.filter(c=>c.notes.length||c.cc.length||c.expression.length);takes.forEach((c,i)=>c.mute=i!==takes.length-1);return takes;}
+}
+
+// Wall-clock history works while the transport is stopped or looping. Bounded by
+// time and event count; capture copies the data and never consumes the buffer.
+export class PerformanceHistory{
+ constructor(seconds=120,limit=4096,clock=()=>performance.now()/1000){this.seconds=seconds;this.limit=limit;this.clock=clock;this.active=new Map();this.notes=[];this.controls=[];}
+ prune(now=this.clock()){const cut=now-this.seconds;this.notes=this.notes.filter(n=>n.end>=cut).slice(-this.limit);this.controls=this.controls.filter(n=>n.time>=cut).slice(-this.limit);for(const [key,n]of this.active)if(n.start<cut)this.active.delete(key);}
+ begin(key,trackId,pitch,velocity){const now=this.clock();this.end(key);this.prune(now);if(this.active.size>=128)this.active.delete(this.active.keys().next().value);this.active.set(key,{trackId,pitch,velocity,start:now});}
+ end(key){const n=this.active.get(key);if(!n)return;this.notes.push({...n,end:Math.max(n.start+.01,this.clock())});this.active.delete(key);this.prune();}
+ control(trackId,type,value){this.controls.push({trackId,type,value,time:this.clock()});this.prune();}
+ capture(trackId,bpm=120,seconds=30){const now=this.clock();this.prune(now);const cut=now-Math.min(seconds,this.seconds),notes=[...this.notes,...[...this.active.values()].map(n=>({...n,end:now}))].filter(n=>n.trackId===trackId&&n.end>=cut);if(!notes.length)return null;const origin=Math.max(cut,Math.min(...notes.map(n=>n.start))),rate=bpm/60,c=midiClip(0,Math.max(.25,(Math.max(...notes.map(n=>n.end))-origin)*rate));c.name='Captured performance';c.notes=notes.map(n=>({id:uid(),pitch:n.pitch,velocity:n.velocity,start:Math.max(0,n.start-origin)*rate,length:Math.max(1/64,(n.end-Math.max(origin,n.start))*rate)}));c.expression=this.controls.filter(n=>n.trackId===trackId&&n.time>=origin).map(n=>({type:n.type,value:n.value,beat:(n.time-origin)*rate,curve:'step'}));return c;}
+}
